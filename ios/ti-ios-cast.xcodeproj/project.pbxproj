@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* TiIosCastModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiIosCastModule.h */; };
+		24DD6CFA1134B3F500162E58 /* TiIosCastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiIosCastModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* TiIosCastModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiIosCastModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* TiIosCastModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiIosCastModuleAssets.m */; };
+		4888BF09209238DC0057F69F /* TiIosCastCastProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4888BF07209238DC0057F69F /* TiIosCastCastProxy.m */; };
+		4888BF0A209238DC0057F69F /* TiIosCastCastProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4888BF08209238DC0057F69F /* TiIosCastCastProxy.h */; };
+		48CD2FDE2090E147005F648C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD22090E145005F648C /* CoreGraphics.framework */; };
+		48CD2FDF2090E147005F648C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD32090E145005F648C /* CoreBluetooth.framework */; };
+		48CD2FE02090E147005F648C /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD42090E145005F648C /* MediaToolbox.framework */; };
+		48CD2FE12090E147005F648C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD52090E146005F648C /* CoreText.framework */; };
+		48CD2FE22090E147005F648C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD62090E146005F648C /* SystemConfiguration.framework */; };
+		48CD2FE32090E147005F648C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD72090E146005F648C /* AudioToolbox.framework */; };
+		48CD2FE42090E147005F648C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD82090E146005F648C /* AVFoundation.framework */; };
+		48CD2FE52090E147005F648C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FD92090E146005F648C /* QuartzCore.framework */; };
+		48CD2FE62090E147005F648C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FDA2090E146005F648C /* MediaPlayer.framework */; };
+		48CD2FE72090E147005F648C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FDB2090E146005F648C /* UIKit.framework */; };
+		48CD2FE82090E147005F648C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FDC2090E146005F648C /* Accelerate.framework */; };
+		48CD2FE92090E147005F648C /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FDD2090E146005F648C /* MediaAccessibility.framework */; };
+		48CD2FEB2090E157005F648C /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CD2FEA2090E157005F648C /* GoogleCast.framework */; };
+		48CD2FF82090E6C9005F648C /* TiIosCastButtonViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CD2FF42090E6C8005F648C /* TiIosCastButtonViewProxy.h */; };
+		48CD2FF92090E6C9005F648C /* TiIosCastButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CD2FF52090E6C8005F648C /* TiIosCastButtonView.h */; };
+		48CD2FFA2090E6C9005F648C /* TiIosCastButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD2FF62090E6C8005F648C /* TiIosCastButtonView.m */; };
+		48CD2FFB2090E6C9005F648C /* TiIosCastButtonViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD2FF72090E6C8005F648C /* TiIosCastButtonViewProxy.m */; };
+		AA747D9F0F9514B9006C5449 /* TiIosCast_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiIosCast_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "ti-ios-cast";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* TiIosCastModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiIosCastModule.h; path = Classes/TiIosCastModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TiIosCastModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiIosCastModule.m; path = Classes/TiIosCastModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* TiIosCastModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiIosCastModuleAssets.h; path = Classes/TiIosCastModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TiIosCastModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiIosCastModuleAssets.m; path = Classes/TiIosCastModuleAssets.m; sourceTree = "<group>"; };
+		4888BF07209238DC0057F69F /* TiIosCastCastProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiIosCastCastProxy.m; path = Classes/TiIosCastCastProxy.m; sourceTree = "<group>"; };
+		4888BF08209238DC0057F69F /* TiIosCastCastProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiIosCastCastProxy.h; path = Classes/TiIosCastCastProxy.h; sourceTree = "<group>"; };
+		48CD2FD22090E145005F648C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48CD2FD32090E145005F648C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		48CD2FD42090E145005F648C /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		48CD2FD52090E146005F648C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		48CD2FD62090E146005F648C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		48CD2FD72090E146005F648C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		48CD2FD82090E146005F648C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		48CD2FD92090E146005F648C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		48CD2FDA2090E146005F648C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		48CD2FDB2090E146005F648C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48CD2FDC2090E146005F648C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		48CD2FDD2090E146005F648C /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		48CD2FEA2090E157005F648C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../../Desktop/GoogleCastSDK-ios-4.2.0/GoogleCast.framework"; sourceTree = "<group>"; };
+		48CD2FF42090E6C8005F648C /* TiIosCastButtonViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiIosCastButtonViewProxy.h; path = Classes/TiIosCastButtonViewProxy.h; sourceTree = "<group>"; };
+		48CD2FF52090E6C8005F648C /* TiIosCastButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiIosCastButtonView.h; path = Classes/TiIosCastButtonView.h; sourceTree = "<group>"; };
+		48CD2FF62090E6C8005F648C /* TiIosCastButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiIosCastButtonView.m; path = Classes/TiIosCastButtonView.m; sourceTree = "<group>"; };
+		48CD2FF72090E6C8005F648C /* TiIosCastButtonViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiIosCastButtonViewProxy.m; path = Classes/TiIosCastButtonViewProxy.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TiIosCast_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiIosCast_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libti.ios.cast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libti.ios.cast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CD2FEB2090E157005F648C /* GoogleCast.framework in Frameworks */,
+				48CD2FDE2090E147005F648C /* CoreGraphics.framework in Frameworks */,
+				48CD2FDF2090E147005F648C /* CoreBluetooth.framework in Frameworks */,
+				48CD2FE02090E147005F648C /* MediaToolbox.framework in Frameworks */,
+				48CD2FE12090E147005F648C /* CoreText.framework in Frameworks */,
+				48CD2FE22090E147005F648C /* SystemConfiguration.framework in Frameworks */,
+				48CD2FE32090E147005F648C /* AudioToolbox.framework in Frameworks */,
+				48CD2FE42090E147005F648C /* AVFoundation.framework in Frameworks */,
+				48CD2FE52090E147005F648C /* QuartzCore.framework in Frameworks */,
+				48CD2FE62090E147005F648C /* MediaPlayer.framework in Frameworks */,
+				48CD2FE72090E147005F648C /* UIKit.framework in Frameworks */,
+				48CD2FE82090E147005F648C /* Accelerate.framework in Frameworks */,
+				48CD2FE92090E147005F648C /* MediaAccessibility.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libti.ios.cast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ti-ios-cast */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "ti-ios-cast";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48CD2FEA2090E157005F648C /* GoogleCast.framework */,
+				48CD2FDC2090E146005F648C /* Accelerate.framework */,
+				48CD2FD72090E146005F648C /* AudioToolbox.framework */,
+				48CD2FD82090E146005F648C /* AVFoundation.framework */,
+				48CD2FD32090E145005F648C /* CoreBluetooth.framework */,
+				48CD2FD22090E145005F648C /* CoreGraphics.framework */,
+				48CD2FD52090E146005F648C /* CoreText.framework */,
+				48CD2FDD2090E146005F648C /* MediaAccessibility.framework */,
+				48CD2FDA2090E146005F648C /* MediaPlayer.framework */,
+				48CD2FD42090E145005F648C /* MediaToolbox.framework */,
+				48CD2FD92090E146005F648C /* QuartzCore.framework */,
+				48CD2FD62090E146005F648C /* SystemConfiguration.framework */,
+				48CD2FDB2090E146005F648C /* UIKit.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4888BF08209238DC0057F69F /* TiIosCastCastProxy.h */,
+				4888BF07209238DC0057F69F /* TiIosCastCastProxy.m */,
+				48CD2FF52090E6C8005F648C /* TiIosCastButtonView.h */,
+				48CD2FF62090E6C8005F648C /* TiIosCastButtonView.m */,
+				48CD2FF42090E6C8005F648C /* TiIosCastButtonViewProxy.h */,
+				48CD2FF72090E6C8005F648C /* TiIosCastButtonViewProxy.m */,
+				24DE9E0F11C5FE74003F90F6 /* TiIosCastModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* TiIosCastModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* TiIosCastModule.h */,
+				24DD6CF81134B3F500162E58 /* TiIosCastModule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* TiIosCast_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CD2FF82090E6C9005F648C /* TiIosCastButtonViewProxy.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* TiIosCast_Prefix.pch in Headers */,
+				4888BF0A209238DC0057F69F /* TiIosCastCastProxy.h in Headers */,
+				24DD6CF91134B3F500162E58 /* TiIosCastModule.h in Headers */,
+				48CD2FF92090E6C9005F648C /* TiIosCastButtonView.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* TiIosCastModuleAssets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ti-ios-cast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti-ios-cast" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ti-ios-cast";
+			productName = "ti-ios-cast";
+			productReference = D2AAC07E0554694100DB518D /* libti.ios.cast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti-ios-cast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ti-ios-cast */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ti-ios-cast */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\nappc run --project-dir \"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* TiIosCastModule.m in Sources */,
+				48CD2FFB2090E6C9005F648C /* TiIosCastButtonViewProxy.m in Sources */,
+				48CD2FFA2090E6C9005F648C /* TiIosCastButtonView.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* TiIosCastModuleAssets.m in Sources */,
+				4888BF09209238DC0057F69F /* TiIosCastCastProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ti-ios-cast */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiIosCast.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiIosCast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.ios.cast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /tmp/TiIosCast.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiIosCast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TI_VERSION=$(TI_VERSION)",
+					NDEBUG,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.ios.cast;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiIosCast.dst;
+				FRAMEWORK_SEARCH_PATHS = /Users/tzubke/mobile/wralnews/modules/iphone/ti.ios.cast/1.0.0/platform;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiIosCast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.ios.cast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/TiIosCast.dst;
+				FRAMEWORK_SEARCH_PATHS = /Users/tzubke/mobile/wralnews/modules/iphone/ti.ios.cast/1.0.0/platform;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiIosCast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.ios.cast;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti-ios-cast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti-ios-cast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

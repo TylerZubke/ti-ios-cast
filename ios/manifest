@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: ti-ios-cast
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2018 by Your Company
+
+# these should not be edited
+name: ti-ios-cast
+moduleid: ti.ios.cast
+guid: 792c8032-e637-4bc2-9069-f02256baae06
+platform: iphone
+minsdk: 7.0.0

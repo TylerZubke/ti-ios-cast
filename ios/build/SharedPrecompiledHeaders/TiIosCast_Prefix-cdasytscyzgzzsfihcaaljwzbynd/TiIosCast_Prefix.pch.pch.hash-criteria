@@ -1,0 +1,29 @@
+-x
+objective-c
+-arch
+armv7
+-std=c99
+-fobjc-arc
+-fpascal-strings
+-Os
+-DTI_VERSION=
+-DNDEBUG
+-DOBJC_OLD_DISPATCH_PROTOTYPES=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk
+-miphoneos-version-min=8.0
+-g
+-fembed-bitcode
+-iquote
+-iquote
+-I/Users/tzubke/mobile/modules/ti-ios-cast/ios/build/Release-iphoneos/include
+-I/Users/tzubke/Library/Application Support/Titanium/mobilesdk/osx/7.2.0.v20180424072413/iphone/include
+-I/Users/tzubke/Library/Application Support/Titanium/mobilesdk/osx/7.2.0.v20180424072413/iphone/include/TiCore
+-I/Users/tzubke/Library/Application Support/Titanium/mobilesdk/osx/7.2.0.v20180424072413/iphone/include/JavaScriptCore
+-F/Users/tzubke/mobile/modules/ti-ios-cast/ios/build/Release-iphoneos
+-F/Users/tzubke/mobile/wralnews/modules/iphone/ti.ios.cast/1.0.0/platform
+-DTI_POST_1_2
+arm-apple-darwin17.5.0
+"4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1)"
+SDK_PRODUCT_BUILD_VERSION=15E217
+15E217
