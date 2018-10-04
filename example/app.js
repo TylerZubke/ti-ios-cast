@@ -1,39 +1,64 @@
-// This is a test harness for your module
-// You should do something interesting in this harness
-// to test out the module and to provide instructions
-// to users on how to use it by example.
+var CastManager = require('ti.ios.cast');
 
+var CastProxy = (function (){
+    var instance;
 
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
+    function createProxy() {
+        return CastManager.createCast();
+    }
+
+    return {
+        getInstance: function() {
+            if(!instance){
+                instance = createProxy();
+            }
+            return instance;
+        }
+    }
+})();
+
+CastManager.configure({
+    applicationId: 'xxxxxxxxxx'
 });
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
 
-// TODO: write your module tests here
-var ti_ios_cast = require('ti.ios.cast');
-Ti.API.info("module is => " + ti_ios_cast);
+var win2 = Titanium.UI.createWindow({
+    backgroundColor: '#fff',
+    title: 'Chromecast Example'
+});
 
-label.text = ti_ios_cast.example();
+var win1 = Titanium.UI.iOS.createNavigationWindow({
+    window: win2
+});
 
-Ti.API.info("module exampleProp is => " + ti_ios_cast.exampleProp);
-ti_ios_cast.exampleProp = "This is a test value";
+win1.open();
 
-if (Ti.Platform.name == "android") {
-	var proxy = ti_ios_cast.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
+var castButtonContainer = Ti.UI.createView({width:24, height:24});
+var castButton = CastManager.createButtonView({
+    color: '#f00'
+});
 
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
+castButtonContainer.add(castButton);
+win2.rightNavButton = castButtonContainer;
+
+CastProxy.getInstance().addEventListener('castStateChange', onCastStateChange);
+
+function onCastStateChange(e)
+{
+    if(e.state == 3)
+    {
+
+        CastProxy.getInstance().castVideo({
+            url: 'http://clips.vorwaerts-gmbh.de/VfE_html5.mp4',
+            contentType: 'video/m3u8',
+            metadata: {
+                title: 'Test Video',
+                subtitle: 'Test subtitle',
+                images: [
+                    'http://camendesign.com/code/video_for_everybody/poster.jpg'
+                ]
+            }
+        });
+    }
 }
+
 
